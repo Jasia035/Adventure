@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="ctn">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colourful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL ADVENTURE</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" alt="Everest Camp Trip">
+                <h4>Everest Camp Trip</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a officia...</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.png" alt="Walking Holidays">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a officia...</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo minus a...</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tour" id="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATIONS</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente cum...</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.png" alt="Destination 1">
+                    <img src="./img/img4.png" alt="Destination 2">
+                    <img src="./img/img5.png" alt="Destination 3">
+                    <img src="./img/img6.png" alt="Destination 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="contact">
+        <p>123 Hill Road, Dhaka-1200, Dhaka, Bangladesh | Phone: 880-123-456 | Email: abd@gmail.com</p>
+        <p>Copyright © 2024 ADVENTURE</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Select menu button and nav links
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Add event listener for mobile menu toggle
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu');
+            });
+        } else {
+            console.error("Menu button or navigation links not found!");
+        }
+    </script>
+</body>
+</html>
